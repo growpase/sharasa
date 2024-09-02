@@ -715,19 +715,19 @@ i.fa.fa-chevron-down {
 
 /* footer section*/
 
-.footer_section {
+.footer-section {
   background-color: #45818e;
   padding: 20px 15px;
   font-family: "Poppins", sans-serif;
 }
 
-.footer_section p {
+.footer-section p {
   color: #fdfdfe;
   margin: 0;
   text-align: center;
 }
 
-.footer_section a {
+.footer-section a {
   color: #fdfdfe;
 }
 
