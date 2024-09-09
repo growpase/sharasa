@@ -56,6 +56,7 @@ body {
   margin: 0;
   width: 48%;
   font-size: 18px;
+  color: #fff;
 }
 
 .hero-ul li i {
@@ -70,7 +71,7 @@ body {
 
 .hero-h1 {
   font-size: 2.5rem;
-  /* color: #fff; */
+  color: #fff;
   text-align: center;
   padding: 40px 0 15px;
   line-height: 2.5rem;
@@ -78,7 +79,7 @@ body {
 }
 
 .hero-h1 span {
-  color: #45818e;
+  color: #f9cf2e;
   font-weight: bold;
   /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
   /* text-shadow: 1px 1px 2px rgba(0,0,0,0.2); */
@@ -90,7 +91,7 @@ body {
 }
 
 .hero-h5 {
-  /* color: #fff; */
+  color: #fff;
   text-align: center;
   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
   /* font-weight: normal; */
@@ -112,7 +113,7 @@ body {
   padding: 15px 15px 10px 15px;
   width: 100%;
   margin: 0 0 15px;
-  background-color: #fff;
+  color: #fff;
 }
 
 .highlight-box h4{
@@ -183,7 +184,7 @@ a:focus {
 
 .top-container {
   position: relative;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 .top-container::before {
@@ -196,7 +197,7 @@ a:focus {
   background-position: right bottom;
   background-repeat: no-repeat;
   z-index: -1;
-  display: none;
+  /* display: none; */
 }
 
 .sub_page .top-container::before {
@@ -338,7 +339,7 @@ a:focus {
 
 /* about section */
 .about-section {
-  background: url(../images/intro-bg.png) no-repeat center center #45818e;
+  background: url(../images/intro-bg.png) no-repeat center center;
   background-size: cover;
   background-attachment: scroll;
   /* background-color: ; */
