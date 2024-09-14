@@ -249,7 +249,7 @@ a:focus {
 
 .top-container .img-responsive img{
   border-radius: 0 100px 0 100px;
-  /* max-height: 400px; */
+  max-height: 450px;
 }
 
 .about-author {
@@ -258,11 +258,12 @@ a:focus {
   /* width: 75px;
   height: 75px; */
   bottom: 30%;
-  left: -6%;
+  left: -2%;
   background-color: #45818e;
   padding: 15px 15px 10px 15px;
   color: #fff;
   border-radius: 20px 0;
+  text-align: left;
 }
 
 .hero-h2{
