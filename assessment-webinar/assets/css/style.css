@@ -853,7 +853,7 @@ i.fa.fa-chevron-down {
 .footer-section {
   background-color: #45818e;
   padding: 20px 15px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .footer-section p {
