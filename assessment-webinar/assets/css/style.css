@@ -273,8 +273,8 @@ a:focus {
 }
 
 .hero-h2 span{
-  /* color: #45818e; */
-  text-decoration: underline;
+  color: #45818e;
+  /* text-decoration: underline; */
 }
 
 .hero-h2 label{
