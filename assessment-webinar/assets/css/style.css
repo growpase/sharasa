@@ -532,6 +532,15 @@ a:focus {
   background-attachment: scroll;
 }
 
+.learn-section p{
+  margin: 0 0 30px;
+}
+
+.learn-section h4,
+.learn-section p{
+  color: #fff;
+}
+
 /* client section */
 
 .carousel-inner {
