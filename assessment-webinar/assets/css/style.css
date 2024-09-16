@@ -54,7 +54,7 @@ body {
   list-style: none;
   padding: 0 0 15px;
   margin: 0;
-  width: 48%;
+  /* width: 48%; */
   font-size: 18px;
 }
 
@@ -72,8 +72,8 @@ body {
   font-size: 2.5rem;
   /* color: #fff; */
   text-align: center;
-  padding: 10px 0;
-  line-height: 2.5rem;
+  padding: 30px 0 10px;
+  line-height: 3rem;
   margin: 0;
 }
 
@@ -82,8 +82,9 @@ body {
 }
 
 .hero-h1 span {
-  color: #45818e;
-  font-weight: bold;
+  /* color: #45818e; */
+  /* font-weight: bold; */
+  text-decoration: underline;
   /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
   /* text-shadow: 1px 1px 2px rgba(0,0,0,0.2); */
 }
@@ -92,6 +93,7 @@ body {
   /* text-decoration: underline; */
   font-weight: bold;
   color: #45818e;
+  display: inline;
 }
 
 .hero-h3{
@@ -125,7 +127,7 @@ body {
   border-radius: 10px;
   padding: 7px 15px;
   width: 100%;
-  margin: 0 0 15px;
+  margin: 15px 0 5px;
   background-color: #fff;
 }
 
@@ -269,7 +271,7 @@ a:focus {
 .hero-h2{
   font-weight: 500;
   /* text-decoration: underline; */
-  padding: 40px 0 0;
+  padding: 20px 0 0;
 }
 
 .hero-h2 span{
@@ -396,11 +398,36 @@ a:focus {
 
 /* about section */
 .about-section {
-  background: url(../images/intro-bg.png) no-repeat center center #45818e;
+  /* background: url(../images/intro-bg.png) no-repeat center center #45818e; */
+  background-color: #45818e;
   background-size: cover;
   background-attachment: scroll;
   /* background-color: ; */
 }
+
+.challenges-ul{
+  padding: 0 40px;
+  margin: 0;
+  float: left;
+}
+
+.challenges-ul li{
+  color: #fff;
+  display: inline-block;
+  width: 45%;
+  font-size: 24px;
+  padding: 15px 25px;
+  margin: 0 15px 15px;
+  /* list-style: decimal; */
+  float: left;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.clearfix{
+  clear: both;
+}
+
 .about-detail-box {
   /* background-color: #fff;
   box-shadow: 0px 8px 30px -13px rgba(6, 0, 49, 0.5); */
@@ -497,6 +524,13 @@ a:focus {
 }
 
 /* end determine section */
+
+.learn-section{
+  background: url(../images/intro-bg.png) no-repeat center center #45818e;
+  /* background-color: #45818e; */
+  background-size: cover;
+  background-attachment: scroll;
+}
 
 /* client section */
 
