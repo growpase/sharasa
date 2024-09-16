@@ -525,9 +525,16 @@ a:focus {
 
 /* end determine section */
 
-.learn-section{
-  background: url(../images/intro-bg.png) no-repeat center center #45818e;
+.success-bg{
+  background: url(../images/intro-bg.png) no-repeat center center #eee;
   /* background-color: #45818e; */
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.learn-section{
+  /* background: url(../images/intro-bg.png) no-repeat center center #45818e; */
+  background-color: #45818e;
   background-size: cover;
   background-attachment: scroll;
 }
@@ -885,7 +892,7 @@ i.fa.fa-chevron-down {
   margin: auto;
   width: 90% !important;
   display: inline-block;
-  height: 350px;
+  height: 450px;
   object-fit: cover;
 }
 
@@ -1115,3 +1122,9 @@ i.fa.fa-chevron-down {
 
 }
 
+
+
+.thank-you-message{
+  margin: auto;
+  width: 60%;
+}
