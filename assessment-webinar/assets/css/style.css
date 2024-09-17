@@ -82,7 +82,7 @@ body {
 }
 
 .hero-h1 span {
-  /* color: #45818e; */
+  /* color: #066B73; */
   /* font-weight: bold; */
   text-decoration: underline;
   /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; */
@@ -92,12 +92,12 @@ body {
 .hero-h1 label {
   /* text-decoration: underline; */
   font-weight: bold;
-  color: #45818e;
+  color: #066b73;
   display: inline;
 }
 
 .hero-h3 {
-  /* color: #45818e; */
+  /* color: #066B73; */
   margin: 0;
 }
 
@@ -260,7 +260,7 @@ a:focus {
   height: 75px; */
   bottom: 30%;
   left: -2%;
-  background-color: #45818e;
+  background-color: #066b73;
   padding: 15px 15px 10px 15px;
   color: #fff;
   border-radius: 20px 0;
@@ -274,7 +274,7 @@ a:focus {
 }
 
 .hero-h2 span {
-  color: #45818e;
+  color: #066b73;
   /* text-decoration: underline; */
 }
 
@@ -397,8 +397,8 @@ a:focus {
 
 /* about section */
 .about-section {
-  /* background: url(../images/intro-bg.png) no-repeat center center #45818e; */
-  background-color: #45818e;
+  /* background: url(../images/intro-bg.png) no-repeat center center #066B73; */
+  background-color: #066b73;
   background-size: cover;
   background-attachment: scroll;
   /* background-color: ; */
@@ -516,7 +516,7 @@ a:focus {
 /* why section */
 
 .know-more {
-  background-color: #45818e;
+  background-color: #066b73;
   color: #fff;
 }
 
@@ -533,14 +533,14 @@ a:focus {
 
 .success-bg {
   background: url(../images/intro-bg.png) no-repeat center center #eee;
-  /* background-color: #45818e; */
+  /* background-color: #066B73; */
   background-size: cover;
   background-attachment: scroll;
 }
 
 .learn-section {
-  /* background: url(../images/intro-bg.png) no-repeat center center #45818e; */
-  background-color: #45818e;
+  /* background: url(../images/intro-bg.png) no-repeat center center #066B73; */
+  background-color: #066b73;
   background-size: cover;
   background-attachment: scroll;
 }
@@ -604,7 +604,7 @@ a:focus {
   width: 100px;
   height: 30px;
   border-radius: 20px;
-  background-color: #45818e;
+  background-color: #066b73;
 }
 
 .client-img-box::before {
@@ -661,7 +661,7 @@ a:focus {
 .testimonial-section .carousel-indicators li {
   width: 25px;
   height: 25px;
-  background-color: #45818e;
+  background-color: #066b73;
   border-radius: 100%;
   opacity: 1;
 }
@@ -676,7 +676,7 @@ a:focus {
 
 .contact-section {
   /* padding: 75px 45px; */
-  background-color: #45818e;
+  background-color: #066b73;
 }
 
 .contact-section .row {
@@ -700,7 +700,7 @@ a:focus {
 
 /* .contact-form-container button {
   border: none;
-  background-color: #45818e;
+  background-color: #066B73;
   color: #fff;
   font-size: 15px;
   padding: 15px 45px;
@@ -826,7 +826,7 @@ a:focus {
 /* faqs section */
 
 .faq {
-  background-color: #45818e;
+  background-color: #066b73;
 }
 
 .faq .faq-list {
@@ -876,7 +876,7 @@ i.fa.fa-chevron-down {
 }
 
 .bonus-section h5 {
-  color: #45818e;
+  color: #066b73;
   padding: 0 0 10px;
   position: relative;
 }
@@ -888,11 +888,11 @@ i.fa.fa-chevron-down {
   height: 1px;
   width: 20%;
   content: "";
-  background-color: #45818e;
+  background-color: #066b73;
 }
 
 .text-main {
-  color: #45818e;
+  color: #066b73;
   font-weight: 600;
   font-size: 21px;
 }
@@ -911,7 +911,7 @@ i.fa.fa-chevron-down {
 /* footer section*/
 
 .footer-section {
-  background-color: #45818e;
+  background-color: #066b73;
   padding: 20px 15px;
   /* font-family: "Poppins", sans-serif; */
 }
