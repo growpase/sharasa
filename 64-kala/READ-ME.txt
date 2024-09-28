@@ -1,6 +1,6 @@
-  =>  Template Name    : BabyCare - Daycare Website Template
+  =>  Template Name    : Mailler - SaaS Website Template
 
-  =>  Template Link    : https://htmlcodex.com/daycare-website-template
+  =>  Template Link    : https://htmlcodex.com/saas-website-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 
