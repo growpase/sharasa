@@ -219,6 +219,10 @@
     position: relative;
 }
 
+strong{
+  font-weight: 500;
+}
+
 @media (min-width: 1200px) {
   .navbar .nav-item .dropdown-menu {
     display: block;
