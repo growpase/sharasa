@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sharasa - Parents Planner</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="../assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["../assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header green">
+            <a href="../index.html" class="logo">
+              <img
+                src="../assets/img/ShaRaSa-logo.png"
+                alt="sharasa logo"
+                class="navbar-brand"
+                height="40"
+              />
+            </a>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel green">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header green">
+              <a href="../index.html" class="logo">
+                <img
+                  src="../assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+            <div class="page-header text-center">
+              <div class="px-2 border-dashed pb-3 col-md-12">
+              <h5 class="fw-bold mb-3 text-white">Parents Planner - November 2024</h5>
+              <h6 class="mb-2 text-white"><span class="fw-bold">Name of the kid</span> - Piyush Joshi</h6>
+                <h6 class="text-white"><span class="fw-bold">Age</span> - 2 years</h6>
+            </div>
+              <div class="mt-4 col-md-12">
+                <!-- <label for="successInput">Levels</label> -->
+                <select class="form-select form-control mb-3" id="parent-level">
+                  <!-- <option value="" >Select Level</option> -->
+                  <option value="level-1" selected="selected">Level 1 - Green Wings</option>
+                  <option value="level-2">Level 2 - Red Wings</option>
+                  <option value="level-3">Level 3 - Blue Wings</option>
+                  <option value="level-4">Level 4 - Blue Wings</option>
+                  <option value="level-5">Level 5 - Yellow Wings</option>
+                  <option value="level-6">Level 6 - Yellow Wings</option>
+                </select>
+              </div>
+            </div>
+
+              <div class="team-planner">
+                <div class="parent-card green" data-value="level-1">
+                  <div class="card card-round">
+                    <div class="card-body">
+                      <div class="card-head-row card-tools-still-right border-solid pb-2">
+                        <div class="card-title">Week 1</div>
+                      </div>
+                      <div class="card-list pb-4">
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">11</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Sail into Imagination</div>
+                            <div class="status">Monday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">12</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Exploring Senses Through Stories</div>
+                            <div class="status">Tuesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">13</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Puppet Pals Parade</div>
+                            <div class="status">Wednesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">14</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Whispering Woods</div>
+                            <div class="status">Thursday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">15</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Community Cleanup Carnival</div>
+                            <div class="status">Friday</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-head-row card-tools-still-right border-solid pb-2">
+                        <div class="card-title">Week 2</div>
+                      </div>
+                      <div class="card-list pb-4">
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">18</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Tip-Toe Maze Adventure</div>
+                            <div class="status">Monday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">19</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Wobble Board Balancing</div>
+                            <div class="status">Tuesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">20</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Tunnel Balance Challenge</div>
+                            <div class="status">Wednesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">21</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Rhythmic Yoga Moves</div>
+                            <div class="status">Thursday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">22</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Balance Fusion Challenge</div>
+                            <div class="status">Friday</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-head-row card-tools-still-right border-solid pb-2">
+                        <div class="card-title">Week 3</div>
+                      </div>
+                      <div class="card-list pb-4">
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">25</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Multisensory Masterpieces</div>
+                            <div class="status">Monday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">26</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Nature's Sound Canvas</div>
+                            <div class="status">Tuesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">27</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Scented Sensory Stories</div>
+                            <div class="status">Wednesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">28</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Textured Tactile Tales</div>
+                            <div class="status">Thursday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">29</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Rainbow Symphony of Senses</div>
+                            <div class="status">Friday</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="parent-card" data-value="level-2" style="display: none;">
+                  <div class="card card-round">
+                    <div class="card-body">
+                      <div class="card-head-row card-tools-still-right border-solid pb-2">
+                        <div class="card-title">Week 1</div>
+                      </div>
+                      <div class="card-list pb-4">
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">11</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Sail into Imagination</div>
+                            <div class="status">Monday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">12</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Exploring Senses Through Stories</div>
+                            <div class="status">Tuesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">13</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Puppet Pals Parade</div>
+                            <div class="status">Wednesday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">14</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Whispering Woods</div>
+                            <div class="status">Thursday</div>
+                          </div>
+                        </div>
+                        <div class="item-list">
+                          <div class="date-box">
+                            <div class="date">15</div>Nov
+                          </div>
+                          <div class="info-user ms-3">
+                            <div class="username">Community Cleanup Carnival</div>
+                            <div class="status">Friday</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="parent-card" data-value="level-3" style="display: none;">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped table-head-bg">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Welcome Session</th>
+                            <th>Play Session</th>
+                            <th>Q & A Session</th>
+                            <th>Skill Session</th>
+                            <th>Food Session</th>
+                            <th>Good Bye Session</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1st November</td>
+                            <td>Tuesday</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="parent-card" data-value="level-4" style="display: none;">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped table-head-bg">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Welcome Session</th>
+                            <th>Play Session</th>
+                            <th>Q & A Session</th>
+                            <th>Skill Session</th>
+                            <th>Food Session</th>
+                            <th>Good Bye Session</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1st November</td>
+                            <td>Tuesday</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="parent-card" data-value="level-5" style="display: none;">
+                  <div class="card-header">
+                    <div class="card-title">Level 5 - Yellow Wings</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped table-head-bg">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Welcome Session</th>
+                            <th>Play Session</th>
+                            <th>Q & A Session</th>
+                            <th>Skill Session</th>
+                            <th>Food Session</th>
+                            <th>Good Bye Session</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1st November</td>
+                            <td>Tuesday</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="parent-card" data-value="level-6" style="display: none;">
+                  <div class="card-header">
+                    <div class="card-title">Level 6 - Yellow Wings</div>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped table-head-bg">
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Welcome Session</th>
+                            <th>Play Session</th>
+                            <th>Q & A Session</th>
+                            <th>Skill Session</th>
+                            <th>Food Session</th>
+                            <th>Good Bye Session</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1st November</td>
+                            <td>Tuesday</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                          <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="copyright text-center">
+              Copyright &copy; 2024. All Rights Reserved By <a href="http://www.sharasa.in">Sharasa</a>
+             <i class="fa fa-heart heart text-danger"></i>
+          </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="../assets/js/scripts.js"></script>
+
+  </body>
+</html>
