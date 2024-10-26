@@ -10294,3 +10294,11 @@ body[data-background-color="dark"] .jvm-zoom-btn {
 .border-dashed{
   border-bottom: 1px dashed #fff;
 }
+
+.hidden-content{
+  display: none;
+}
+
+.date-list{
+  cursor: pointer;
+}

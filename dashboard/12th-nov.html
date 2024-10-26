@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sharasa - Parents Planner</title>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+    <link rel="icon" href="assets/img/kaiadmin/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { families: ["Public Sans:300,400,500,600,700"] },
+            custom: {
+                families: [
+                    "Font Awesome 5 Solid",
+                    "Font Awesome 5 Regular",
+                    "Font Awesome 5 Brands",
+                    "simple-line-icons",
+                ],
+                urls: ["assets/css/fonts.min.css"],
+            },
+            active: function () {
+                sessionStorage.fonts = true;
+            },
+        });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <!-- Logo Header -->
+                <div class="logo-header green">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/ShaRaSa-logo.png" alt="sharasa logo" class="navbar-brand" height="40" />
+                    </a>
+                </div>
+                <!-- End Logo Header -->
+            </div>
+        </div>
+        <!-- End Sidebar -->
+
+        <div class="main-panel green">
+            <div class="main-header">
+                <div class="main-header-logo">
+                    <!-- Logo Header -->
+                    <div class="logo-header green">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand"
+                                height="20" />
+                        </a>
+                        <div class="nav-toggle">
+                            <button class="btn btn-toggle toggle-sidebar">
+                                <i class="gg-menu-right"></i>
+                            </button>
+                            <button class="btn btn-toggle sidenav-toggler">
+                                <i class="gg-menu-left"></i>
+                            </button>
+                        </div>
+                        <button class="topbar-toggler more">
+                            <i class="gg-more-vertical-alt"></i>
+                        </button>
+                    </div>
+                    <!-- End Logo Header -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="page-inner">
+                    <div class="page-header text-center">
+                        <div class="px-2 border-dashed pb-3 col-md-12">
+                            <h5 class="fw-bold mb-3 text-white">Team Planner - November 2024</h5>
+                            <h6 class="mb-2 text-white"><span class="fw-bold">Name of the kid</span> - Piyush Joshi</h6>
+                            <h6 class="text-white"><span class="fw-bold">Age</span> - 2 years</h6>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 col-md-12">
+                        <a id="topDate" class="text-white text-center date-click">12th Tuesday</a>
+                        <div id="dateList">
+                            <div class="card-list pb-4">
+                                <div class="item-list">
+                                    <div class="date-list" data-link="11-nov.html">
+                                        <div class="date-div">11th <span class="status fw-bold">Nov</span></div>
+                                        <div class="status text-right">Monday</div>
+                                    </div>
+                                </div>
+                                <div class="item-list">
+                                    <div class="date-list" data-link="12-nov.html">
+                                        <div class="date-div">12th <span class="status fw-bold">Nov</span></div>
+                                        <div class="status text-right">Tuesday</div>
+                                    </div>
+                                </div>
+                                <div class="item-list">
+                                    <div class="date-list" data-link="13-nov.html">
+                                        <div class="date-div">13th <span class="status fw-bold">Nov</span></div>
+                                        <div class="status text-right">Wednesday</div>
+                                    </div>
+                                </div>
+                                <div class="item-list">
+                                    <div class="date-list" data-link="14-nov.html">
+                                        <div class="date-div">14th <span class="status fw-bold">Nov</span></div>
+                                        <div class="status text-right">Thursday</div>
+                                    </div>
+                                </div>
+                                <div class="item-list">
+                                    <div class="date-list" data-link="15-nov.html">
+                                        <div class="date-div">15th <span class="status fw-bold">Nov</span></div>
+                                        <div class="status text-right">Friday</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-planner hide" id="nov-11">
+                        <div class="mt-2 col-md-12">
+                            <!-- <label for="successInput">Levels</label> -->
+                            <select class="form-select form-control mb-3" id="parent-level">
+                                <!-- <option value="" >Select Level</option> -->
+                                <option value="level-1" selected="selected">Level 1 - Green Wings</option>
+                                <option value="level-2">Level 2 - Red Wings</option>
+                                <option value="level-3">Level 3 - Blue Wings</option>
+                                <option value="level-4">Level 4 - Blue Wings</option>
+                                <option value="level-5">Level 5 - Yellow Wings</option>
+                                <option value="level-6">Level 6 - Yellow Wings</option>
+                            </select>
+                        </div>
+                        <div class="parent-card green" data-value="level-1">
+                            <div class="card card-round">
+                                <div class="card-body">
+                                    <div class="session-1">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                            <div class="card-title">Welcome Session - Action Games</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">Activity 1: Superhero Training Camp</h6>
+                                            <h6 class="fw-bold mt-3">Activity Goal -</h6>
+                                            <div>To engage children in imaginative and physical play while encouraging
+                                                them to develop teamwork, creativity, and coordination skills.
+                                            </div>
+                                            <h6 class="fw-bold mt-3">Materials Needed -</h6>
+                                            <ul>
+                                                <li>Pillows, hula hoops, tunnels, and other simple obstacle course items
+                                                </li>
+                                                <li>Upbeat music</li>
+                                                <li>Construction paper, markers, stickers, and other craft supplies</li>
+                                                <li>Inflated balloons</li>
+                                                <li>Stuffed animals</li>
+                                            </ul>
+                                            <h6 class="fw-bold">Activity Guidelines</h6>
+                                            <h6 class="fw-bold mt-3">Obstacle Course -</h6>
+                                            <ol>
+                                                <li>Set up the obstacle course in a safe area, either indoors or
+                                                    outdoors.</li>
+                                                <li>Guide the children through the course, encouraging them to use their
+                                                    superhero powers to complete the challenges.</li>
+                                                <li>Make sure each child gets a turn to navigate the course.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Freeze Dance -</h6>
+                                            <ol>
+                                                <li>Play lively music and have the kids dance freely.</li>
+                                                <li>Pause the music at intervals and instruct the children to freeze in
+                                                    superhero poses when the music stops.</li>
+                                                <li>Restart the music and continue the game.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Superhero Craft -</h6>
+                                            <ol>
+                                                <li>Provide the children with craft supplies and instruct them to create
+                                                    their superhero masks and capes.</li>
+                                                <li>Encourage them to use their creativity to design their unique
+                                                    superhero attire.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Balloon Sword Fights -</h6>
+                                            <ol>
+                                                <li>Give each child an inflated balloon and teach them how to have safe,
+                                                    playful sword fights.</li>
+                                                <li>Emphasize the importance of not hurting others during the game.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Save the Stuffed Animals -</h6>
+                                            <ol>
+                                                <li>Scatter stuffed animals around the room.</li>
+                                                <li>Designate one child as the superhero and instruct them to "save" the
+                                                    animals without touching the floor (the "lava").</li>
+                                                <li>Rotate roles so that each child gets a chance to be the superhero.
+                                                </li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Before the Week -</h6>
+                                            <ul>
+                                                <li>Prepare the obstacle course items and ensure a safe play area.</li>
+                                                <li>Gather craft supplies for the superhero mask and cape activity.</li>
+                                                <li>Inflate enough balloons for the balloon sword fights.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="session-2">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                            <div class="card-title">Play Session - Silly Songs</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">Activity Manual: Silly Monkey Dance</h6>
+                                            <h6 class="fw-bold mt-3">Activity Goal -</h6>
+                                            <div>The goal of this activity is to engage preschool-aged children (up to 6
+                                                years old) in a fun and active playtime session, promoting physical
+                                                activity, creativity, and social interaction.</div>
+                                            <h6 class="fw-bold mt-3">Materials Needed -</h6>
+                                            <ol>
+                                                <li>Audio playback device (e.g., a smartphone or a portable speaker)
+                                                </li>
+                                                <li>A device with access to the "Silly Monkey Dance" song (e.g., a
+                                                    playlist or YouTube)</li>
+                                                <li>A clear, open space for children to move around</li>
+                                                <li>Optional: Monkey-themed props (e.g., plush toys, banana cutouts)
+                                                </li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Preparation (To Be Done One Week Prior) -</h6>
+                                            <ol>
+                                                <li>Select a suitable location with enough space for kids to move and
+                                                    dance comfortably.</li>
+                                                <li>Ensure you have access to a device that can play the "Silly Monkey
+                                                    Dance" song.</li>
+                                                <li>Familiarize yourself with the song and its lyrics.</li>
+                                                <li>Optional: Prepare any monkey-themed props or decorations to create a
+                                                    playful atmosphere.</li>
+                                            </ol>
+                                            <h6 class="fw-bold">Activity Guidelines</h6>
+                                            <h6 class="fw-bold mt-3">Introduction (5 minutes) -</h6>
+                                            <ol>
+                                                <li>Gather the children in the designated play area.</li>
+                                                <li>Briefly explain the activity and its purpose: "Today, we're going to
+                                                    have a blast doing the 'Silly Monkey Dance.' We'll dance and have
+                                                    fun like silly monkeys!"</li>
+                                                <li>Optionally, show the children any monkey-themed props to generate
+                                                    excitement.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Activity (15 minutes) -</h6>
+                                            <ol>
+                                                <li>Play the "Silly Monkey Dance" song using the audio playback device.
+                                                </li>
+                                                <li>Encourage the children to listen to the song and follow the
+                                                    instructions for different monkey movements (e.g., stomping,
+                                                    clapping, swinging, jumping).</li>
+                                                <li>Join in with the children and demonstrate the movements as the song
+                                                    plays.</li>
+                                                <li>Create an enthusiastic and playful atmosphere, cheering the kids on
+                                                    as they dance and have fun.</li>
+                                                <li>Let the children's creativity shine; they can add their own silly
+                                                    monkey moves as well.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Cool Down (5 minutes) -</h6>
+                                            <ol>
+                                                <li>Gradually slow down the music and guide the children in taking deep
+                                                    breaths to cool down.</li>
+                                                <li>Have the children sit or gather in a circle.</li>
+                                                <li>Share positive feedback, applaud their efforts, and ask if they had
+                                                    fun dancing like silly monkeys.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Instructions for Trainers -</h6>
+                                            <ol>
+                                                <li>Maintain a positive and encouraging tone throughout the activity.
+                                                </li>
+                                                <li>Be prepared to join in with the children to create a fun and
+                                                    engaging atmosphere.</li>
+                                                <li>Pay attention to each child, and ensure they are safe during the
+                                                    activity.</li>
+                                                <li>Encourage children to be creative and expressive with their dance
+                                                    moves.</li>
+                                                <li>Be patient, as some children may need a bit more time to warm up and
+                                                    participate fully.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Conclusion -</h6>
+                                            <div>The "Silly Monkey Dance" activity is a fantastic way to engage young
+                                                children in a fun and active playtime session. By following this manual
+                                                and creating an exciting and inclusive atmosphere, teachers can help
+                                                kids explore their creativity, enjoy physical activity, and develop
+                                                social interaction skills. Remember to have a wonderful time dancing
+                                                like silly monkeys together!</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-3">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Q & A Session - Emotions and Feelings</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold mt-3">1. What do you feel when you get a new toy?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Happy</div>
+                                            <h6 class="fw-bold mt-3">2. What do you feel when you fall down and get hurt?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Sad or hurt</div>
+                                            <h6 class="fw-bold mt-3">3. Can you show me a face that looks surprised?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Demonstration</div>
+                                            <h6 class="fw-bold mt-3">4. What do you feel when someone takes your toy without asking?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Angry or upset</div>
+                                            <h6 class="fw-bold mt-3">5. What do you feel when you hug your parents?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Loved or happy</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-4">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Skill Session - not available</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-5">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Food Session - The Story</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">सांबारची कहाणी (The Story of Sambar)</h6>
+                                            <h6 class="fw-bold mt-3">Summary -</h6>
+                                            <div>सांबार बनवण्यासाठी वेगवेगळ्या भाज्या कशा एकत्र येतात, त्यांची मजेशीर गोष्ट. Moral: भाज्यांचे फायदे आणि त्यांचे एकत्रीत आहारातील महत्त्व.</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-6">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Good Bye Session - Community Helpers Puzzle</div>
+                                        </div>
+                                        <h6 class="fw-bold mt-3">Materials -</h6>
+                                        <div>Puzzles featuring community helpers (firefighter, police officer, doctor, etc.).</div>
+                                        <h6 class="fw-bold mt-3">Activity -</h6>
+                                        <div>Kids complete the puzzles and discuss the role of each community helper.</div>
+                                        <h6 class="fw-bold mt-3">Goal -</h6>
+                                        <div>Enhance vocabulary and understanding of different community roles and helpers.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-card" data-value="level-2" style="display: none;">
+                            <div class="card card-round">
+                                <div class="card-body">
+                                    <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                        <div class="card-title">Week 1</div>
+                                    </div>
+                                    <div class="card-list pb-4">
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">11</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Sail into Imagination</div>
+                                                <div class="status">Monday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">12</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Exploring Senses Through Stories</div>
+                                                <div class="status">Tuesday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">13</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Puppet Pals Parade</div>
+                                                <div class="status">Wednesday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">14</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Whispering Woods</div>
+                                                <div class="status">Thursday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">15</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Community Cleanup Carnival</div>
+                                                <div class="status">Friday</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-card" data-value="level-3" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-4" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-5" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-6" style="display: none;">
+
+                        </div>
+                    </div>
+
+                    <div class="team-planner hidden-content" id="nov-12">
+                        <div class="mt-2 col-md-12">
+                            <!-- <label for="successInput">Levels</label> -->
+                            <select class="form-select form-control mb-3" id="parent-level">
+                                <!-- <option value="" >Select Level</option> -->
+                                <option value="level-1" selected="selected">Level 1 - Green Wings</option>
+                                <option value="level-2">Level 2 - Red Wings</option>
+                                <option value="level-3">Level 3 - Blue Wings</option>
+                                <option value="level-4">Level 4 - Blue Wings</option>
+                                <option value="level-5">Level 5 - Yellow Wings</option>
+                                <option value="level-6">Level 6 - Yellow Wings</option>
+                            </select>
+                        </div>
+                        <div class="parent-card green" data-value="level-1">
+                            <div class="card card-round">
+                                <div class="card-body">
+                                    <div class="session-1">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                            <div class="card-title">Welcome Session 2 - Action Games</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">Activity 1: Superhero Training Camp</h6>
+                                            <h6 class="fw-bold mt-3">Activity Goal -</h6>
+                                            <div>To engage children in imaginative and physical play while encouraging
+                                                them to develop teamwork, creativity, and coordination skills.
+                                            </div>
+                                            <h6 class="fw-bold mt-3">Materials Needed -</h6>
+                                            <ul>
+                                                <li>Pillows, hula hoops, tunnels, and other simple obstacle course items
+                                                </li>
+                                                <li>Upbeat music</li>
+                                                <li>Construction paper, markers, stickers, and other craft supplies</li>
+                                                <li>Inflated balloons</li>
+                                                <li>Stuffed animals</li>
+                                            </ul>
+                                            <h6 class="fw-bold">Activity Guidelines</h6>
+                                            <h6 class="fw-bold mt-3">Obstacle Course -</h6>
+                                            <ol>
+                                                <li>Set up the obstacle course in a safe area, either indoors or
+                                                    outdoors.</li>
+                                                <li>Guide the children through the course, encouraging them to use their
+                                                    superhero powers to complete the challenges.</li>
+                                                <li>Make sure each child gets a turn to navigate the course.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Freeze Dance -</h6>
+                                            <ol>
+                                                <li>Play lively music and have the kids dance freely.</li>
+                                                <li>Pause the music at intervals and instruct the children to freeze in
+                                                    superhero poses when the music stops.</li>
+                                                <li>Restart the music and continue the game.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Superhero Craft -</h6>
+                                            <ol>
+                                                <li>Provide the children with craft supplies and instruct them to create
+                                                    their superhero masks and capes.</li>
+                                                <li>Encourage them to use their creativity to design their unique
+                                                    superhero attire.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Balloon Sword Fights -</h6>
+                                            <ol>
+                                                <li>Give each child an inflated balloon and teach them how to have safe,
+                                                    playful sword fights.</li>
+                                                <li>Emphasize the importance of not hurting others during the game.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Save the Stuffed Animals -</h6>
+                                            <ol>
+                                                <li>Scatter stuffed animals around the room.</li>
+                                                <li>Designate one child as the superhero and instruct them to "save" the
+                                                    animals without touching the floor (the "lava").</li>
+                                                <li>Rotate roles so that each child gets a chance to be the superhero.
+                                                </li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Before the Week -</h6>
+                                            <ul>
+                                                <li>Prepare the obstacle course items and ensure a safe play area.</li>
+                                                <li>Gather craft supplies for the superhero mask and cape activity.</li>
+                                                <li>Inflate enough balloons for the balloon sword fights.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="session-2">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                            <div class="card-title">Play Session - Silly Songs</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">Activity Manual: Silly Monkey Dance</h6>
+                                            <h6 class="fw-bold mt-3">Activity Goal -</h6>
+                                            <div>The goal of this activity is to engage preschool-aged children (up to 6
+                                                years old) in a fun and active playtime session, promoting physical
+                                                activity, creativity, and social interaction.</div>
+                                            <h6 class="fw-bold mt-3">Materials Needed -</h6>
+                                            <ol>
+                                                <li>Audio playback device (e.g., a smartphone or a portable speaker)
+                                                </li>
+                                                <li>A device with access to the "Silly Monkey Dance" song (e.g., a
+                                                    playlist or YouTube)</li>
+                                                <li>A clear, open space for children to move around</li>
+                                                <li>Optional: Monkey-themed props (e.g., plush toys, banana cutouts)
+                                                </li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Preparation (To Be Done One Week Prior) -</h6>
+                                            <ol>
+                                                <li>Select a suitable location with enough space for kids to move and
+                                                    dance comfortably.</li>
+                                                <li>Ensure you have access to a device that can play the "Silly Monkey
+                                                    Dance" song.</li>
+                                                <li>Familiarize yourself with the song and its lyrics.</li>
+                                                <li>Optional: Prepare any monkey-themed props or decorations to create a
+                                                    playful atmosphere.</li>
+                                            </ol>
+                                            <h6 class="fw-bold">Activity Guidelines</h6>
+                                            <h6 class="fw-bold mt-3">Introduction (5 minutes) -</h6>
+                                            <ol>
+                                                <li>Gather the children in the designated play area.</li>
+                                                <li>Briefly explain the activity and its purpose: "Today, we're going to
+                                                    have a blast doing the 'Silly Monkey Dance.' We'll dance and have
+                                                    fun like silly monkeys!"</li>
+                                                <li>Optionally, show the children any monkey-themed props to generate
+                                                    excitement.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Activity (15 minutes) -</h6>
+                                            <ol>
+                                                <li>Play the "Silly Monkey Dance" song using the audio playback device.
+                                                </li>
+                                                <li>Encourage the children to listen to the song and follow the
+                                                    instructions for different monkey movements (e.g., stomping,
+                                                    clapping, swinging, jumping).</li>
+                                                <li>Join in with the children and demonstrate the movements as the song
+                                                    plays.</li>
+                                                <li>Create an enthusiastic and playful atmosphere, cheering the kids on
+                                                    as they dance and have fun.</li>
+                                                <li>Let the children's creativity shine; they can add their own silly
+                                                    monkey moves as well.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Cool Down (5 minutes) -</h6>
+                                            <ol>
+                                                <li>Gradually slow down the music and guide the children in taking deep
+                                                    breaths to cool down.</li>
+                                                <li>Have the children sit or gather in a circle.</li>
+                                                <li>Share positive feedback, applaud their efforts, and ask if they had
+                                                    fun dancing like silly monkeys.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Instructions for Trainers -</h6>
+                                            <ol>
+                                                <li>Maintain a positive and encouraging tone throughout the activity.
+                                                </li>
+                                                <li>Be prepared to join in with the children to create a fun and
+                                                    engaging atmosphere.</li>
+                                                <li>Pay attention to each child, and ensure they are safe during the
+                                                    activity.</li>
+                                                <li>Encourage children to be creative and expressive with their dance
+                                                    moves.</li>
+                                                <li>Be patient, as some children may need a bit more time to warm up and
+                                                    participate fully.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Conclusion -</h6>
+                                            <div>The "Silly Monkey Dance" activity is a fantastic way to engage young
+                                                children in a fun and active playtime session. By following this manual
+                                                and creating an exciting and inclusive atmosphere, teachers can help
+                                                kids explore their creativity, enjoy physical activity, and develop
+                                                social interaction skills. Remember to have a wonderful time dancing
+                                                like silly monkeys together!</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-3">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Q & A Session - Emotions and Feelings</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold mt-3">1. What do you feel when you get a new toy?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Happy</div>
+                                            <h6 class="fw-bold mt-3">2. What do you feel when you fall down and get hurt?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Sad or hurt</div>
+                                            <h6 class="fw-bold mt-3">3. Can you show me a face that looks surprised?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Demonstration</div>
+                                            <h6 class="fw-bold mt-3">4. What do you feel when someone takes your toy without asking?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Angry or upset</div>
+                                            <h6 class="fw-bold mt-3">5. What do you feel when you hug your parents?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Loved or happy</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-4">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Skill Session - not available</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-5">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Food Session - The Story</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">सांबारची कहाणी (The Story of Sambar)</h6>
+                                            <h6 class="fw-bold mt-3">Summary -</h6>
+                                            <div>सांबार बनवण्यासाठी वेगवेगळ्या भाज्या कशा एकत्र येतात, त्यांची मजेशीर गोष्ट. Moral: भाज्यांचे फायदे आणि त्यांचे एकत्रीत आहारातील महत्त्व.</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-6">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Good Bye Session - Community Helpers Puzzle</div>
+                                        </div>
+                                        <h6 class="fw-bold mt-3">Materials -</h6>
+                                        <div>Puzzles featuring community helpers (firefighter, police officer, doctor, etc.).</div>
+                                        <h6 class="fw-bold mt-3">Activity -</h6>
+                                        <div>Kids complete the puzzles and discuss the role of each community helper.</div>
+                                        <h6 class="fw-bold mt-3">Goal -</h6>
+                                        <div>Enhance vocabulary and understanding of different community roles and helpers.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-card" data-value="level-2" style="display: none;">
+                            <div class="card card-round">
+                                <div class="card-body">
+                                    <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                        <div class="card-title">Week 1</div>
+                                    </div>
+                                    <div class="card-list pb-4">
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">11</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Sail into Imagination</div>
+                                                <div class="status">Monday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">12</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Exploring Senses Through Stories</div>
+                                                <div class="status">Tuesday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">13</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Puppet Pals Parade</div>
+                                                <div class="status">Wednesday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">14</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Whispering Woods</div>
+                                                <div class="status">Thursday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">15</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Community Cleanup Carnival</div>
+                                                <div class="status">Friday</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-card" data-value="level-3" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-4" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-5" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-6" style="display: none;">
+
+                        </div>
+                    </div>
+
+                    <div class="team-planner hidden-content" id="nov-13">
+                        <div class="mt-2 col-md-12">
+                            <!-- <label for="successInput">Levels</label> -->
+                            <select class="form-select form-control mb-3" id="parent-level">
+                                <!-- <option value="" >Select Level</option> -->
+                                <option value="level-1" selected="selected">Level 1 - Green Wings</option>
+                                <option value="level-2">Level 2 - Red Wings</option>
+                                <option value="level-3">Level 3 - Blue Wings</option>
+                                <option value="level-4">Level 4 - Blue Wings</option>
+                                <option value="level-5">Level 5 - Yellow Wings</option>
+                                <option value="level-6">Level 6 - Yellow Wings</option>
+                            </select>
+                        </div>
+                        <div class="parent-card green" data-value="level-1">
+                            <div class="card card-round">
+                                <div class="card-body">
+                                    <div class="session-1">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                            <div class="card-title">Welcome Session 3 - Action Games</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">Activity 1: Superhero Training Camp</h6>
+                                            <h6 class="fw-bold mt-3">Activity Goal -</h6>
+                                            <div>To engage children in imaginative and physical play while encouraging
+                                                them to develop teamwork, creativity, and coordination skills.
+                                            </div>
+                                            <h6 class="fw-bold mt-3">Materials Needed -</h6>
+                                            <ul>
+                                                <li>Pillows, hula hoops, tunnels, and other simple obstacle course items
+                                                </li>
+                                                <li>Upbeat music</li>
+                                                <li>Construction paper, markers, stickers, and other craft supplies</li>
+                                                <li>Inflated balloons</li>
+                                                <li>Stuffed animals</li>
+                                            </ul>
+                                            <h6 class="fw-bold">Activity Guidelines</h6>
+                                            <h6 class="fw-bold mt-3">Obstacle Course -</h6>
+                                            <ol>
+                                                <li>Set up the obstacle course in a safe area, either indoors or
+                                                    outdoors.</li>
+                                                <li>Guide the children through the course, encouraging them to use their
+                                                    superhero powers to complete the challenges.</li>
+                                                <li>Make sure each child gets a turn to navigate the course.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Freeze Dance -</h6>
+                                            <ol>
+                                                <li>Play lively music and have the kids dance freely.</li>
+                                                <li>Pause the music at intervals and instruct the children to freeze in
+                                                    superhero poses when the music stops.</li>
+                                                <li>Restart the music and continue the game.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Superhero Craft -</h6>
+                                            <ol>
+                                                <li>Provide the children with craft supplies and instruct them to create
+                                                    their superhero masks and capes.</li>
+                                                <li>Encourage them to use their creativity to design their unique
+                                                    superhero attire.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Balloon Sword Fights -</h6>
+                                            <ol>
+                                                <li>Give each child an inflated balloon and teach them how to have safe,
+                                                    playful sword fights.</li>
+                                                <li>Emphasize the importance of not hurting others during the game.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Save the Stuffed Animals -</h6>
+                                            <ol>
+                                                <li>Scatter stuffed animals around the room.</li>
+                                                <li>Designate one child as the superhero and instruct them to "save" the
+                                                    animals without touching the floor (the "lava").</li>
+                                                <li>Rotate roles so that each child gets a chance to be the superhero.
+                                                </li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Before the Week -</h6>
+                                            <ul>
+                                                <li>Prepare the obstacle course items and ensure a safe play area.</li>
+                                                <li>Gather craft supplies for the superhero mask and cape activity.</li>
+                                                <li>Inflate enough balloons for the balloon sword fights.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="session-2">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                            <div class="card-title">Play Session - Silly Songs</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">Activity Manual: Silly Monkey Dance</h6>
+                                            <h6 class="fw-bold mt-3">Activity Goal -</h6>
+                                            <div>The goal of this activity is to engage preschool-aged children (up to 6
+                                                years old) in a fun and active playtime session, promoting physical
+                                                activity, creativity, and social interaction.</div>
+                                            <h6 class="fw-bold mt-3">Materials Needed -</h6>
+                                            <ol>
+                                                <li>Audio playback device (e.g., a smartphone or a portable speaker)
+                                                </li>
+                                                <li>A device with access to the "Silly Monkey Dance" song (e.g., a
+                                                    playlist or YouTube)</li>
+                                                <li>A clear, open space for children to move around</li>
+                                                <li>Optional: Monkey-themed props (e.g., plush toys, banana cutouts)
+                                                </li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Preparation (To Be Done One Week Prior) -</h6>
+                                            <ol>
+                                                <li>Select a suitable location with enough space for kids to move and
+                                                    dance comfortably.</li>
+                                                <li>Ensure you have access to a device that can play the "Silly Monkey
+                                                    Dance" song.</li>
+                                                <li>Familiarize yourself with the song and its lyrics.</li>
+                                                <li>Optional: Prepare any monkey-themed props or decorations to create a
+                                                    playful atmosphere.</li>
+                                            </ol>
+                                            <h6 class="fw-bold">Activity Guidelines</h6>
+                                            <h6 class="fw-bold mt-3">Introduction (5 minutes) -</h6>
+                                            <ol>
+                                                <li>Gather the children in the designated play area.</li>
+                                                <li>Briefly explain the activity and its purpose: "Today, we're going to
+                                                    have a blast doing the 'Silly Monkey Dance.' We'll dance and have
+                                                    fun like silly monkeys!"</li>
+                                                <li>Optionally, show the children any monkey-themed props to generate
+                                                    excitement.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Activity (15 minutes) -</h6>
+                                            <ol>
+                                                <li>Play the "Silly Monkey Dance" song using the audio playback device.
+                                                </li>
+                                                <li>Encourage the children to listen to the song and follow the
+                                                    instructions for different monkey movements (e.g., stomping,
+                                                    clapping, swinging, jumping).</li>
+                                                <li>Join in with the children and demonstrate the movements as the song
+                                                    plays.</li>
+                                                <li>Create an enthusiastic and playful atmosphere, cheering the kids on
+                                                    as they dance and have fun.</li>
+                                                <li>Let the children's creativity shine; they can add their own silly
+                                                    monkey moves as well.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Cool Down (5 minutes) -</h6>
+                                            <ol>
+                                                <li>Gradually slow down the music and guide the children in taking deep
+                                                    breaths to cool down.</li>
+                                                <li>Have the children sit or gather in a circle.</li>
+                                                <li>Share positive feedback, applaud their efforts, and ask if they had
+                                                    fun dancing like silly monkeys.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Instructions for Trainers -</h6>
+                                            <ol>
+                                                <li>Maintain a positive and encouraging tone throughout the activity.
+                                                </li>
+                                                <li>Be prepared to join in with the children to create a fun and
+                                                    engaging atmosphere.</li>
+                                                <li>Pay attention to each child, and ensure they are safe during the
+                                                    activity.</li>
+                                                <li>Encourage children to be creative and expressive with their dance
+                                                    moves.</li>
+                                                <li>Be patient, as some children may need a bit more time to warm up and
+                                                    participate fully.</li>
+                                            </ol>
+                                            <h6 class="fw-bold mt-3">Conclusion -</h6>
+                                            <div>The "Silly Monkey Dance" activity is a fantastic way to engage young
+                                                children in a fun and active playtime session. By following this manual
+                                                and creating an exciting and inclusive atmosphere, teachers can help
+                                                kids explore their creativity, enjoy physical activity, and develop
+                                                social interaction skills. Remember to have a wonderful time dancing
+                                                like silly monkeys together!</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-3">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Q & A Session - Emotions and Feelings</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold mt-3">1. What do you feel when you get a new toy?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Happy</div>
+                                            <h6 class="fw-bold mt-3">2. What do you feel when you fall down and get hurt?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Sad or hurt</div>
+                                            <h6 class="fw-bold mt-3">3. Can you show me a face that looks surprised?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Demonstration</div>
+                                            <h6 class="fw-bold mt-3">4. What do you feel when someone takes your toy without asking?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Angry or upset</div>
+                                            <h6 class="fw-bold mt-3">5. What do you feel when you hug your parents?</h6>
+                                            <div><span class="fw-bold">Ans -</span> Loved or happy</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-4">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Skill Session - not available</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-5">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Food Session - The Story</div>
+                                        </div>
+                                        <div class="card-list">
+                                            <h6 class="fw-bold">सांबारची कहाणी (The Story of Sambar)</h6>
+                                            <h6 class="fw-bold mt-3">Summary -</h6>
+                                            <div>सांबार बनवण्यासाठी वेगवेगळ्या भाज्या कशा एकत्र येतात, त्यांची मजेशीर गोष्ट. Moral: भाज्यांचे फायदे आणि त्यांचे एकत्रीत आहारातील महत्त्व.</div>
+                                        </div>
+                                    </div>
+                                    <div class="session-6">
+                                        <div class="card-head-row card-tools-still-right border-solid pb-2 mt-3">
+                                            <div class="card-title">Good Bye Session - Community Helpers Puzzle</div>
+                                        </div>
+                                        <h6 class="fw-bold mt-3">Materials -</h6>
+                                        <div>Puzzles featuring community helpers (firefighter, police officer, doctor, etc.).</div>
+                                        <h6 class="fw-bold mt-3">Activity -</h6>
+                                        <div>Kids complete the puzzles and discuss the role of each community helper.</div>
+                                        <h6 class="fw-bold mt-3">Goal -</h6>
+                                        <div>Enhance vocabulary and understanding of different community roles and helpers.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-card" data-value="level-2" style="display: none;">
+                            <div class="card card-round">
+                                <div class="card-body">
+                                    <div class="card-head-row card-tools-still-right border-solid pb-2">
+                                        <div class="card-title">Week 1</div>
+                                    </div>
+                                    <div class="card-list pb-4">
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">11</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Sail into Imagination</div>
+                                                <div class="status">Monday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">12</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Exploring Senses Through Stories</div>
+                                                <div class="status">Tuesday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">13</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Puppet Pals Parade</div>
+                                                <div class="status">Wednesday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">14</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Whispering Woods</div>
+                                                <div class="status">Thursday</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="date-box">
+                                                <div class="date">15</div>Nov
+                                            </div>
+                                            <div class="info-user ms-3">
+                                                <div class="username">Community Cleanup Carnival</div>
+                                                <div class="status">Friday</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parent-card" data-value="level-3" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-4" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-5" style="display: none;">
+
+                        </div>
+                        <div class="parent-card" data-value="level-6" style="display: none;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="copyright text-center">
+                        Copyright &copy; 2024 <a href="http://www.sharasa.in">Sharasa</a>
+                        <i class="fa fa-heart heart text-danger"></i>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/scripts.js"></script>
+
+</body>
+
+</html>

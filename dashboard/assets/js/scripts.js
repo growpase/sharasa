@@ -280,26 +280,34 @@ $('.main-header .logo-header').html(logoHeaderContent),
       $('#dateList').toggle()
     })
 
-    $('.date-list').on('click', function () {
-      let day = $(this)
-        .find('.date-div')
-        .clone()
-        .children()
-        .remove()
-        .end()
-        .text()
-        .trim()
-      let weekday = $(this).find('.status.text-right').text().trim()
+    // $('.date-list').on('click', function () {
+    //   let day = $(this)
+    //     .find('.date-div')
+    //     .clone()
+    //     .children()
+    //     .remove()
+    //     .end()
+    //     .text()
+    //     .trim()
+    //   let weekday = $(this).find('.status.text-right').text().trim()
 
-      $('.hidden-content').hide()
+    //   $('.hidden-content').hide()
 
-      let targetDiv = $(this).data('target')
-      $(targetDiv).show()
+    //   let targetDiv = $(this).data('target')
+    //   $(targetDiv).show()
 
-      $('#topDate').text(`${day} ${weekday}`)
+    //   $('#topDate').text(`${day} ${weekday}`)
 
-      $('#dateList').hide()
-    })
+    //   $('#dateList').hide()
+    // })
+
+    $(".date-list").on("click", function() {
+      // Get the URL from data-link attribute
+      let url = $(this).data("link");
+
+      // Navigate to the specified URL
+      window.location.href = url;
+  });
   }),
   $('.input-file-image input[type="file"').change(function () {
     readURL(this)
