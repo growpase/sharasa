@@ -151,7 +151,32 @@
         }
       })
 
+// Smooth scroll to section on navigation link click
+$('#navbarCollapse .nav-link').click(function (e) {
+    e.preventDefault();
+    const targetId = $(this).attr('href');
+    $('html, body').animate(
+      {
+        scrollTop: $(targetId).offset().top,
+      },
+      500
+    );
+  });
 
+  // Update active class on scroll
+  $(window).on('scroll', function () {
+    const scrollPos = $(window).scrollTop();
+    $('#navbarCollapse .nav-link').each(function () {
+      const target = $($(this).attr('href'));
+      if (
+        target.position().top <= scrollPos &&
+        target.position().top + target.outerHeight() > scrollPos
+      ) {
+        $('#navbarCollapse .nav-link').removeClass('active');
+        $(this).addClass('active');
+      }
+    });
+  });
 
 })(jQuery);
 
