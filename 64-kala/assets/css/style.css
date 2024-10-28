@@ -1250,7 +1250,7 @@ strong{
 .change-flex-direction{
   flex-direction: column;
 }
-.order-2-mobile{
+.order-1-mobile{
   order: 1;
 }
 .order-2-mobile{
