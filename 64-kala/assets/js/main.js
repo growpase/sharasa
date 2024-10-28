@@ -36,8 +36,8 @@
         loop: true,
         nav : true,
         navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+            '<i class="fas fa-arrow-left fa-fw"></i>',
+            '<i class="fas fa-arrow-right fa-fw"></i>'
         ],
     });
 
@@ -53,8 +53,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+            '<i class="fas fa-arrow-left fa-fw"></i>',
+            '<i class="fas fa-arrow-right fa-fw"></i>'
         ]
     });
 
@@ -86,8 +86,8 @@
         loop: true,
         nav : true,
         navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+            '<i class="fas fa-arrow-left fa-fw"></i>',
+            '<i class="fas fa-arrow-right fa-fw"></i>'
         ],
     });
 
