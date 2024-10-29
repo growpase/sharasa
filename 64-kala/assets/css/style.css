@@ -65,6 +65,10 @@
   border-radius: 50%;
 }
 
+.mtb-2{
+  margin: 2rem;
+}
+
 .btn.btn-primary {
   background: var(--bs-primary) !important;
   color: var(--bs-white) !important;
@@ -800,6 +804,14 @@ strong{
   .mtb-2-mobile{
     margin: 2rem 0;
   }
+  .owl-prev{
+    left: 10px;
+    top: 40%;
+  }
+  .owl-next{
+    right: 10px;
+    top: 40%;
+  }
 }
 .lh-2-5 {
   line-height: 2.5rem;
@@ -1263,5 +1275,12 @@ strong{
 }
 .order-2-mobile{
   order: 2;
+}
+.mtb-2{
+  margin: 1rem;
+}
+.py-5 {
+  padding-top: 1.8rem !important;
+  padding-bottom: 1.8rem !important;
 }
 }
