@@ -74,9 +74,9 @@
   color: var(--bs-white) !important;
   font-weight: 400;
   transition: 0.5s;
-  -webkit-box-shadow: 5px 6px 0px #d35400;
-  -moz-box-shadow: 5px 6px 0px #d35400;
-  box-shadow: 5px 6px 0px #d35400;
+  -webkit-box-shadow: 3px 3px 0px #d35400;
+  -moz-box-shadow: 3px 3px 0px #d35400;
+  box-shadow: 3px 3px 0px #d35400;
 }
 
 .back-to-top{
@@ -928,7 +928,7 @@ strong{
 .blog .blog-item .blog-img {
   position: relative;
   overflow: hidden;
-  background: rgba(102, 16, 242, 0.2);
+  background: #f6f6fa;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
