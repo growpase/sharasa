@@ -634,7 +634,7 @@ strong{
 }
 
 .hero-header {
-  padding-top: 160px;
+  padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
 }
@@ -793,8 +793,8 @@ strong{
     animation: none;
   }
 
-  .mt-3-mobile{
-    margin-top: 3rem;
+  .mt-2-mobile{
+    margin-top: 2rem;
   }
 
   .mb-2-mobile{
@@ -822,6 +822,9 @@ strong{
 }
 .border-curved {
   border-radius: 50px;
+}
+.border-curved-50{
+  border-radius: 50%;
 }
 .child-can-p {
   position: relative;
@@ -882,6 +885,10 @@ strong{
     width: 80%;
     margin: auto;
 }
+.w-90{
+  width: 90%;
+  margin: auto;
+}
 
 /*** Service End ***/
 
@@ -923,12 +930,13 @@ strong{
 /*** Blog Start ***/
 .blog .blog-item {
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 }
 
 .blog .blog-item .blog-img {
   position: relative;
   overflow: hidden;
-  background: #f6f6fa;
+  background: rgba(0, 0, 0, 0.05);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -1267,6 +1275,138 @@ strong{
   text-align: center;
 }
 
+.owl-carousel .owl-item img.art-form{
+  width: 30%;
+  margin-top: 1rem;
+}
+
+.skills-box{
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin: 0 0 2rem;
+}
+
+.skills-img{
+  padding: 0 1.2rem 0 0;
+}
+
+.skills-img img {
+  max-width: 64px;
+  max-height: 64px;
+  width: auto;
+}
+
+.owl-carousel .owl-stage{display: flex;}
+.owl-carousel .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+    height: 100%;
+}
+.owl-carousel .owl-item .item, .owl-carousel .owl-item .service-item {
+    position: relative;
+    overflow: hidden;
+    /* margin-bottom: 80px; *//*This is optional*/
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+}
+
+.contest-box{
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.3rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.contest-box i{
+  font-size: 2.5rem;
+  margin: 0 1.5rem 0 0;
+}
+
+.pay-now{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.pay-now span{
+  font-size: 1rem;
+}
+
+/* thank you */
+.success-bg{
+  background-color: #eee;
+}
+.thank-you-message {
+  margin: auto;
+  width: 60%;
+}
+
+.width-50 {
+  background-color: #fff;
+  width: 40%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.width-50 ul {
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.width-50 ul li {
+  list-style: none;
+  margin: 0 0 5px;
+  padding: 0 0 0 25px;
+  position: relative;
+}
+
+.width-50 ul li i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.mr-2{
+  margin-right: 10px;
+}
+
+.imp-date{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px;
+  border-radius: 7px;
+  padding: 1rem 1.5rem;
+}
+
+.contest-ul{
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+
+.highlight-ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight-ul li{
+  font-size: 1.2rem;
+  padding: 0 0 0.8rem;
+}
+
+.date-box{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem 0.8rem;
+  border-radius: 7px;
+}
+
 @media (max-width: 992px) {
 .lh-2-5{
   line-height: 2rem;
@@ -1281,10 +1421,22 @@ strong{
   order: 2;
 }
 .mtb-2{
-  margin: 1rem;
+  margin: 1rem 0;
+}
+.mb-1-mobile{
+  margin-bottom: 2rem;
+}
+.w-80{
+  width: 100%;
 }
 .py-5 {
   padding-top: 1.8rem !important;
   padding-bottom: 1.8rem !important;
+}
+.pay-now{
+  font-size: 1.2rem;
+}
+.pay-now span{
+  font-size: 0.9rem;
 }
 }

@@ -17,69 +17,69 @@
 
 
     // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
-        items: 1,
-        autoplay: true,
-        smartSpeed: 1000,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fas fa-arrow-left fa-fw"></i>',
-            '<i class="fas fa-arrow-right fa-fw"></i>'
-        ],
-    });
+    // $(".header-carousel").owlCarousel({
+    //     animateOut: 'slideOutDown',
+    //     items: 1,
+    //     autoplay: true,
+    //     smartSpeed: 1000,
+    //     dots: false,
+    //     loop: true,
+    //     nav : true,
+    //     navText : [
+    //         '<i class="fas fa-arrow-left fa-fw"></i>',
+    //         '<i class="fas fa-arrow-right fa-fw"></i>'
+    //     ],
+    // });
 
 
     // International carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        items: 1,
-        smartSpeed: 1500,
-        dots: true,
-        dotsData: true,
-        loop: true,
-        margin: 25,
-        nav : true,
-        navText : [
-            '<i class="fas fa-arrow-left fa-fw"></i>',
-            '<i class="fas fa-arrow-right fa-fw"></i>'
-        ]
-    });
+    // $(".testimonial-carousel").owlCarousel({
+    //     autoplay: true,
+    //     items: 1,
+    //     smartSpeed: 1500,
+    //     dots: true,
+    //     dotsData: true,
+    //     loop: true,
+    //     margin: 25,
+    //     nav : true,
+    //     navText : [
+    //         '<i class="fas fa-arrow-left fa-fw"></i>',
+    //         '<i class="fas fa-arrow-right fa-fw"></i>'
+    //     ]
+    // });
 
 
     // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
+    // $(document).ready(function () {
+    //     var $videoSrc;
+    //     $('.btn-play').click(function () {
+    //         $videoSrc = $(this).data("src");
+    //     });
+    //     console.log($videoSrc);
 
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
+    //     $('#videoModal').on('shown.bs.modal', function (e) {
+    //         $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    //     })
 
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
+    //     $('#videoModal').on('hide.bs.modal', function (e) {
+    //         $("#video").attr('src', $videoSrc);
+    //     })
+    // });
 
 
     // testimonial carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fas fa-arrow-left fa-fw"></i>',
-            '<i class="fas fa-arrow-right fa-fw"></i>'
-        ],
-    });
+    // $(".testimonial-carousel").owlCarousel({
+    //     autoplay: true,
+    //     smartSpeed: 1000,
+    //     center: true,
+    //     dots: true,
+    //     loop: true,
+    //     nav : true,
+    //     navText : [
+    //         '<i class="fas fa-arrow-left fa-fw"></i>',
+    //         '<i class="fas fa-arrow-right fa-fw"></i>'
+    //     ],
+    // });
 
 
 
@@ -133,6 +133,12 @@
             nav: false
           },
           1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 20
+          },
+          1200: {
             items: 4,
             nav: true,
             loop: false,
@@ -142,31 +148,44 @@
       })
 
 // Smooth scroll to section on navigation link click
-$('#navbarCollapse .nav-link').click(function (e) {
-    e.preventDefault();
-    const targetId = $(this).attr('href');
-    $('html, body').animate(
-      {
-        scrollTop: $(targetId).offset().top,
-      },
-      500
-    );
-  });
+// $('#navbarCollapse .nav-link').click(function (e) {
+//     e.preventDefault();
+//     const targetId = $(this).attr('href');
+//     $('html, body').animate(
+//       {
+//         scrollTop: $(targetId).offset().top,
+//       },
+//       500
+//     );
+//   });
 
-  // Update active class on scroll
-  $(window).on('scroll', function () {
-    const scrollPos = $(window).scrollTop();
-    $('#navbarCollapse .nav-link').each(function () {
-      const target = $($(this).attr('href'));
-      if (
-        target.position().top <= scrollPos &&
-        target.position().top + target.outerHeight() > scrollPos
-      ) {
-        $('#navbarCollapse .nav-link').removeClass('active');
-        $(this).addClass('active');
-      }
-    });
-  });
+//   // Update active class on scroll
+//   $(window).on('scroll', function () {
+//     const scrollPos = $(window).scrollTop();
+//     $('#navbarCollapse .nav-link').each(function () {
+//       const target = $($(this).attr('href'));
+//       if (
+//         target.position().top <= scrollPos &&
+//         target.position().top + target.outerHeight() > scrollPos
+//       ) {
+//         $('#navbarCollapse .nav-link').removeClass('active');
+//         $(this).addClass('active');
+//       }
+//     });
+//   });
+
+// })(jQuery);
+
+$('.cta-btn').click(function (e) {
+  e.preventDefault();
+  const targetId = $(this).attr('href');
+  $('html, body').animate(
+    {
+      scrollTop: $(targetId).offset().top,
+    },
+    500
+  );
+});
 
 })(jQuery);
 
